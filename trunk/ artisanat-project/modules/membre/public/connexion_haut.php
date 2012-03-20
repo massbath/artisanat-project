@@ -6,23 +6,32 @@ if (isset($_POST['connexion']))
 	
 	//Bouton connexion pressé
 	$username = (isset($_POST['username'])) ? $_POST['username'] : '';
-	$mdpass  = (isset($_POST['mdpass']))  ? $_POST['mdpass']  : '';
+	$mdpasse  = (isset($_POST['mdpasse']))  ? $_POST['mdpasse']  : '';
 
-	if (($username == "test") && ($mdpass == "123456"))
+	if (($username == "test") && ($mdpasse == 123456))
 	{
 		$_SESSION['logged'] = true;
 		$_SESSION['username'] = $username;
 	}
 	else
 	{
-		//Message erreur
-		
+		//Message erreur et redirection à faire
+		echo "Pas Bon";
 	}
 }
-if(isset($_SESSION['logged']) and $_SESSION['logged']==true)
+if(isset($_SESSION['logged']) && $_SESSION['logged']==true)
 {
+?>
 
+<!-- Affichage quand connecté -->
+<div id="login">
+<div id="titre_login">Bonjour <?php echo $_SESSION['username']; ?></div>
+<div><a href=""> Modifier mon profil</a></div>
+<div><a href="index.php?page=deconnexion"> Déconnexion </a></div>
+</div>
+<!-- Fin d'affichage quand connecté -->
 
+<?php
 }else{
 ?>
 

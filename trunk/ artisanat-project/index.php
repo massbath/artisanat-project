@@ -1,4 +1,5 @@
 <?php session_start();
+include ('includes/visite.php');
 include ('includes/conf_bdd.php');
 mysql_connect($serveur_bdd, $nom_user, $motdepasse);
 mysql_select_db($nom_database);
