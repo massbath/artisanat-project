@@ -1,0 +1,2 @@
+Dossier contenant tous les modules du site
+Un dossier pour chaque module
