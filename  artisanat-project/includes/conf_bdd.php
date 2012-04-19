@@ -3,7 +3,7 @@
 
 $serveur_bdd="localhost";
 $nom_user="root";
-$motdepasse="mysql";
+$motdepasse="";
 $nom_database="artisanat";
 
 ?>
