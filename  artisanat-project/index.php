@@ -28,11 +28,10 @@ mysql_select_db($nom_database);
 	<div class='droite'><?php include('modules/membre/public/connexion_haut.php'); ?></div>	
 	</div>
 
-	<div id="menu">
-	<a href="index.php" title="Retour à l'accueil"><div class="accueil">Accueil</div></a>
-	<a href="index.php?page=contact" title="Contactez nous"><div class="contact">Contact</div></a>
+	<div id="menu"> 
+	<?php include ('modules/menu/public/menu.php'); ?>
 	</div>
-
+	
 	<div>
 	<?php include ('includes/pages.php'); ?>
 	</div>
