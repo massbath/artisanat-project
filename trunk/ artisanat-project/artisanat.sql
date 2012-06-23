@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.9
+-- version 3.4.10.1
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le : Mar 20 Mars 2012 à 13:09
+-- Généré le : Dim 20 Mai 2012 à 14:39
 -- Version du serveur: 5.5.20
--- Version de PHP: 5.3.9
+-- Version de PHP: 5.3.10
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -147,6 +147,10 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `nom` varchar(30) NOT NULL,
   `prenom` varchar(30) NOT NULL,
   `date_naissance` date NOT NULL,
+  `sexe` varchar(1) NOT NULL,
+  `adresse` varchar(200) NOT NULL,
+  `cp` int(6) NOT NULL,
+  `ville` varchar(100) NOT NULL,
   `telephone_domicile` varchar(10) NOT NULL,
   `telephone_portable` varchar(10) NOT NULL,
   `date_enregistrement` datetime NOT NULL,
