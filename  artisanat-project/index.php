@@ -1,8 +1,8 @@
 <?php session_start();
 include ('includes/visite.php');
 include ('includes/conf_bdd.php');
-mysql_connect($serveur_bdd, $nom_user, $motdepasse);
-mysql_select_db($nom_database);
+$link = mysql_connect($serveur_bdd, $nom_user, $motdepasse);
+mysql_select_db($nom_database,$link);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
@@ -28,10 +28,11 @@ mysql_select_db($nom_database);
 	<div class='droite'><?php include('modules/membre/public/connexion_haut.php'); ?></div>	
 	</div>
 
-	<div id="menu"> 
-	<?php include ('modules/menu/public/menu.php'); ?>
+	<div id="menu">
+	<a href="index.php" title="Retour à l'accueil"><div class="accueil">Accueil</div></a>
+	<a href="index.php?page=contact" title="Contactez nous"><div class="contact">Contact</div></a>
 	</div>
-	
+
 	<div>
 	<?php include ('includes/pages.php'); ?>
 	</div>

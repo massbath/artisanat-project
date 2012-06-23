@@ -1,31 +1,11 @@
 <?php
-
-if (isset($_POST['connexion']))
-{
-	if (!isset($_SESSION['logged'])) $_SESSION['logged'] = false;
-	
-	//Bouton connexion pressé
-	$username = (isset($_POST['username'])) ? $_POST['username'] : '';
-	$mdpasse  = (isset($_POST['mdpasse']))  ? $_POST['mdpasse']  : '';
-
-	if (($username == "test") && ($mdpasse == 123456))
-	{
-		$_SESSION['logged'] = true;
-		$_SESSION['username'] = $username;
-	}
-	else
-	{
-		//Message erreur et redirection à faire
-		echo "Pas Bon";
-	}
-}
 if(isset($_SESSION['logged']) && $_SESSION['logged']==true)
 {
 ?>
 
 <!-- Affichage quand connecté -->
 <div id="login">
-<div id="titre_login">Bonjour <?php echo $_SESSION['username']; ?></div>
+<div id="titre_login">Bonjour <?php echo $_SESSION['prenom']; ?></div>
 <div><a href=""> Modifier mon profil</a></div>
 <div><a href="index.php?page=deconnexion"> Déconnexion </a></div>
 </div>
@@ -38,7 +18,7 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']==true)
 <!-- Affichage du formulaire de login -->
 <div id="login">
 
-<form method="post" action="">
+<form method="post" action="modules/membre/traitement/verif_connexion.php?<?php if(isset($_GET['page'])) echo '&page='.$_GET['page'];?>" name="connexion">
 <table cellpadding="0" cellspacing="0" cols="2">
 	<tr>
 		<td colspan="2">
@@ -47,16 +27,16 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']==true)
 	</tr>
 	<tr>
 		<td>
-			<label>Username</label>
+			<label>E-Mail</label>
 		</td><td>
-			<input type="text" name="username" id="input" />
+			<input type="text" name="username" id="input" value="Votre E-mail" onfocus="if (this.value == 'Votre E-mail') this.value = '';" />
 		<td>
 	</tr>
 	<tr>
 		<td>
 			<label>Mot de passe</label>
 		</td><td>
-			<input type="password" name="mdpasse" id="input" />
+			<input type="password" name="mdpasse" id="input" value="*******" onfocus="if (this.value == '*******') this.value = '';" />
 		</td>
 	<tr>
 	<tr>

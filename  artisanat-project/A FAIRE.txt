@@ -1,0 +1,3 @@
+- Ajouter compléments d'adresse à l'enregistrement ...
+- Ajouter CAPTCHA à l'enregistrement
+- Mail à l'enregistrement
