@@ -1,0 +1,78 @@
+@CHARSET "UTF-8";
+
+/******* GENERAL RESET *******/
+h1{
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.2em;
+	border-bottom: 1px dotted #6b9ef1;
+	color: #5f95ef;
+	margin-bottom: 1em;
+}
+
+/******* FORM *******/
+#formulaireinscription{
+	padding: 0 10px 10px;
+}
+#formulaireinscription label{
+	display: block;
+	color: #797979;
+	font-weight: 700;
+	line-height: 1.4em;
+}
+#formulaireinscription input{
+	width: 220px;
+	padding: 6px;
+	color: #949494;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #cecece;
+}
+#formulaireinscription input.error{
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+
+#formulaireinscription div{
+	margin-bottom: 15px;
+}
+#formulaireinscription div span{
+	margin-left: 10px;
+	color: #b1b1b1;
+	font-size: 11px;
+	font-style: italic;
+}
+#formulaireinscription div span.error{
+	color: #e46c6e;
+}
+#formulaireinscription #send{
+	background: #6f9ff1;
+	color: #fff;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+}
+#formulaireinscription #send:hover{
+	background: #79a7f1;
+}
+#error{
+	margin-bottom: 20px;
+	border: 1px solid #efefef;
+}
+#error ul{
+	list-style: square;
+	padding: 5px;
+	font-size: 11px;
+}
+#error ul li{
+	list-style-position: inside;
+	line-height: 1.6em;
+}
+#error ul li strong{
+	color: #e46c6d;
+}
+#error.valid ul li strong{
+	color: #93d72e;
+}
+/******* /FORM *******/
