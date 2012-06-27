@@ -1,3 +1,12 @@
 - Ajouter compléments d'adresse à l'enregistrement ...
 - Ajouter CAPTCHA à l'enregistrement
 - Mail à l'enregistrement
+
+- Création page connexion + erreur de log
+- page de mot de passe perdu
+
+
+Renaud : Intégration design
+Clement : Formulaire contact (utilisation messagerie interne) + Fiche entreprise
+Romain : Formulaire création compte personnel + Formulaire création compte entreprise
+Damien : Messagerie Interne JQuery

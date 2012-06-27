@@ -1,1 +1,1 @@
-<?phpsession_start();$_SESSION['logged']=false;echo "<meta http-equiv='refresh' content='0;URL=index.php'>";?>
+<?php$_SESSION['logged']=false;echo "<meta http-equiv='refresh' content='0;URL=index.php'>";?>

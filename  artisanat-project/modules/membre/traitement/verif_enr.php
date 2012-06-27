@@ -93,12 +93,12 @@ if($i==0)
 	$pass=md5($pass);
 	$code_activation = md5($nom.$prenom.$jour.$mois.$annee.$ville);
 	$ip=$_SERVER["REMOTE_ADDR"];
-	$requete="INSERT INTO `utilisateur` (id_user,mail,password,nom,prenom,date_naissance,sexe,adresse,cp,ville,telephone_domicile,telephone_portable,ip_enregistrement,activation) VALUES (NULL,'$mail','$pass','$nom','$prenom','$date_naissance','$sexe','$adresse','$cp','$ville','$telf','$telm','$ip','$code_activation')";
+	$requete="INSERT INTO `utilisateur` (id_user,mail,password,nom,prenom,date_naissance,sexe,adresse,cp,ville,telephone_domicile,telephone_portable,ip_enregistrement,code_activation,activation) VALUES (NULL,'$mail','$pass','$nom','$prenom','$date_naissance','$sexe','$adresse','$cp','$ville','$telf','$telm','$ip','$code_activation',0)";
 	mysql_query($requete) or die(mysql_error());
 	$_SESSION['error']=$_SESSION['error']."Enregistrement réussi, vous avez reçu un E-mail pour valider votre compte\n";
 	$_SESSION['color']="green";
 	//Envoi d'un mail pour confirmation
-	include('mail_confirmation.php');
+	include('mail_inscription.php');
 }else{
 	$_SESSION['color']="red";
 	$_SESSION['error']=$_SESSION['error']."N'oubliez pas de mettre à nouveau votre mot de passe\n";

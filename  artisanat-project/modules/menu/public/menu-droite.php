@@ -1,0 +1,1 @@
+<ul>	<a href='#' class='active'>		<span>Choix 1</span>	</a>	<a href='#' class='nactive'>		<span>Choix 2</span>	</a>	<a href='#' class='nactive'>		<span>Choix 3</span>	</a>	<a href='#' class='nactive'>		<span>Choix 36578</span>	</a></ul>
