@@ -4,7 +4,20 @@
 	<tr>
 		<td colspan="2" class="table-defaut-haut">
 			<div class="defaut-haut">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris. Cras elit nisl, rhoncus nec iaculis ultricies, feugiat eget sapien. Pellentesque ac felis tellus.</p>
+				<p>
+					<?php
+					if(isset($_SESSION['logged']) && $_SESSION['logged']==false)
+					{
+					?>
+					Notre site est Super Mega Génial .... blablabla ...
+					<br/>Vous êtes un professionnel : <a href="http://localhost/artisanat-project/index.php?page=inscription?statut=pro">Inscription PRO</a>
+					<br/>Vous êtes un particulier : <a href="http://localhost/artisanat-project/index.php?page=inscription?statut=part">Inscription PARTICULIER</a>
+					<?php
+					}else{
+						echo "T'es déjà venu ici toi gros gitan";
+					}
+					?>
+				</p>
 			</div>
 		</td>
 	</tr>

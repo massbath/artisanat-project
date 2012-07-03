@@ -6,7 +6,8 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']==true)
 <!-- Affichage quand connecté -->
 <div id="login">
 <div id="titre_login">Bonjour <?php echo $_SESSION['prenom']; ?></div>
-<div><a href=""> Modifier mon profil</a></div>
+<div><a href="index.php?page=modification_profil"> Modifier mes informations personnelles</a></div>
+<div><a href="index.php?page=modif_pass"> Modifier mon mot de passe</a></div>
 <div><a href="index.php?page=deconnexion"> Déconnexion </a></div>
 </div>
 <!-- Fin d'affichage quand connecté -->
@@ -25,28 +26,28 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']==true)
 			<div id="titre_login">Se Connecter</div>
 		<td>
 	</tr>
-	<tr style='padding-top:5px;'>
-		<td style='text-align:center;'>
-			<label>E-Mail</label>
+	<tr>
+		<td style='text-align:center; padding-top:5px;'>
+			<label>Adresse E-Mail</label>
 		</td><td>
 			<input type="text" name="username" id="input" value="Votre E-mail" onfocus="if (this.value == 'Votre E-mail') this.value = '';" />
 		<td>
 	</tr>
 	<tr>
-		<td style='text-align:center;'>
+		<td style='text-align:center; padding-top:5px;'>
 			<label>Mot de passe</label>
 		</td><td>
 			<input type="password" name="mdpasse" id="input" value="*******" onfocus="if (this.value == '*******') this.value = '';" />
 		</td>
+	</tr>
 	<tr>
-	<tr >
-		<td colspan="2" style="text-align:center; padding-top:3px;">
-			<input type="submit" name="connexion" value="Connexion" id="" />
+		<td colspan="2" style="text-align:center;">
+			<input type="submit" id="input" name="connexion" value="Connexion" />
 			
 		</td>
 	</tr>
 	<tr>
-		<td colspan='2'>
+		<td colspan='2' style="padding-top:5px;">
 			<a href="index.php?page=inscription" title="Inscrivez-vous">Pas encore inscrit ?</a>
 		</td>
 	</tr>
