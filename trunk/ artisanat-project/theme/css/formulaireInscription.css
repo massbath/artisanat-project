@@ -1,0 +1,98 @@
+/******* FORM *******/
+#inscription
+{
+	text-align:center;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+#formulaireinscription input.error{
+	background: #f8dbdb;
+	border-color:#e46c6e;
+}
+#formulaireinscription input.ok{
+	background: #daf7d7;
+	border-color: #24bc1c;
+}
+#formulaireinscription td{
+	padding-left:20px;
+	padding-top:5px;
+}
+
+#name, #firstname, #pass1, #pass2, #email, #address, #zipCode, #city, #phoneNumber, #mobilePhoneNumber, #birthDay
+{
+	margin-top:5px;
+	height:17px;
+}
+#name.error:focus, #firstname.error:focus, #pass1.error:focus, #pass2.error:focus, #email.error:focus, #address.error:focus, #zipCode.error:focus, #city.error:focus, #phoneNumber.error:focus, #mobilePhoneNumber.error:focus, #birthDay.error:focus
+{
+	margin-top:4px;
+}
+#name.ok:focus, #firstname.ok:focus, #pass1.ok:focus, #pass2.ok:focus, #email.ok:focus, #address.ok:focus, #zipCode.ok:focus, #city.ok:focus, #phoneNumber.ok:focus, #mobilePhoneNumber.ok:focus, #birthDay.ok:focus
+{
+	margin-top:4px;
+}
+
+/* Infos */
+#formulaireinscription span.error{
+	color: #e46c6e;
+	margin-left:8px;
+}
+#formulaireinscription span.ok{
+	color: #24bc1c;
+	margin-left:8px;
+}
+
+#captcha-wrap{
+	border:solid rgb(126,0,0) 1px;
+	width:270px;
+	height:116px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background:rgb(126,0,0);
+	text-align:left;
+	padding:3px;
+	margin-top:10px;
+}
+#captcha-wrap .captcha-box{
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background:#fff;	
+	text-align:center;
+	margin-bottom:3px;
+}
+#captcha-wrap .text-box{
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	background:#ffdc73;
+	width:140px;
+	height:63px;
+	text-align:center;
+	float:left;
+}
+#captcha-wrap .text-box input{ 
+	width:120px;
+	height:20px;
+	margin-top:10px;
+}
+#captcha-wrap .text-box label{
+	 color:#000000;
+	 font-family: helvetica,sans-serif;
+	 font-size:12px;	
+	 width:140px;
+}
+#captcha-wrap .captcha-action{
+	width:117px; 
+	background:url(../captcha/logos.jpg) top right no-repeat; 
+	height:44px; 
+	margin-top:3px;
+	float:right;
+}
+#captcha-wrap  img#captcha-refresh{
+	margin-top:9px;
+	border:solid #333333 1px;
+	margin-right:6px;
+	cursor:pointer;
+}

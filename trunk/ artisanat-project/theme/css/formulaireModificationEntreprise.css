@@ -1,0 +1,80 @@
+/******* FORM *******/
+#creation_entreprise
+{
+	text-align:center;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+#formulaireModificationEntreprise input.error{
+	background: #f8dbdb;
+	border-color: #e46c6e;
+}
+#formulaireModificationEntreprise input.ok{
+	background: #daf7d7;
+	border-color: #24bc1c;
+}
+#formulaireModificationEntreprise td{
+	padding-left:20px;
+	padding-top:5px;
+}
+
+#nom_entreprise, #siret_entreprise, #email_entreprise, #site_entreprise, #adresse_entreprise, #zipCode_entreprise, #ville_entreprise, #phoneNumber_entreprise, #fax_entreprise, #mobilePhoneNumber_entreprise
+{
+	margin-top:5px;
+	height:17px;
+}
+#nom_entreprise.error:focus, #siret_entreprise.error:focus, #email_entreprise.error:focus, #site_entreprise.error:focus, #adresse_entreprise.error:focus, #zipCode_entreprise.error:focus, #ville_entreprise.error:focus, #phoneNumber_entreprise.error:focus, #fax_entreprise.error:focus, #mobilePhoneNumber_entreprise.error:focus
+{
+	margin-top:4px;
+}
+#nom_entreprise.ok:focus, #siret_entreprise.ok:focus, #email_entreprise.ok:focus, #site_entreprise.ok:focus, #adresse_entreprise.ok:focus, #zipCode_entreprise.ok:focus, #ville_entreprise.ok:focus, #phoneNumber_entreprise.ok:focus, #fax_entreprise.ok:focus, #mobilePhoneNumber_entreprise.ok:focus
+{
+	margin-top:4px;
+}
+/* Infos */
+#formulaireModificationEntreprise span.error{
+	color: #e46c6e;
+	margin-left:8px;
+}
+#formulaireModificationEntreprise span.ok{
+	color: #24bc1c;
+	margin-left:8px;
+}
+
+/* Bouton d'envoi *//*
+#formulaireModificationEntreprise #send{
+	background: #6f9ff1;
+	color: #fff;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+}
+#formulaireModificationEntreprise #send:hover{
+	background: #79a7f1;
+}*/
+
+#error{
+	margin-bottom: 20px;
+	border: 1px solid #efefef;
+}
+
+#error ul{
+	list-style: square;
+	padding: 5px;
+	font-size: 11px;
+}
+
+#error ul li{
+	list-style-position: inside;
+	line-height: 1.6em;
+}
+
+#error ul li strong{
+	color: #e46c6d;
+}
+
+#error.valid ul li strong{
+	color: #93d72e;
+}
+/******* /FORM *******/

@@ -16,6 +16,13 @@ mysql_select_db($nom_database,$link);
 <meta name="author" content=""/> 
 <link rel="shortcut icon" type="image/ico" href="theme/favicon/favicon.ico" />
 <link rel="stylesheet" href="theme/css/style.css" type="text/css" media="screen" />
+
+<link type="text/css" rel="stylesheet" href="theme/redmond/jquery-ui-1.8.21.custom.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="theme/redmond/jquery-ui-1.8.21.custom.css" media="screen" />
+<script type="text/javascript" src="includes/javascript/jquery/jquery-1.7.2.js" language="JavaScript"></script>
+<script type="text/javascript" src="includes/javascript/jquery/jquery-ui-1.8.21.custom.js" language="JavaScript"></script>
+<script type="text/javascript" src="includes/javascript/jquery/ui.datepicker.js"></script>
+<script type="text/javascript" src="includes/javascript/jquery/ui.datepicker-fr.js"></script>
 </head>
 
 <body>

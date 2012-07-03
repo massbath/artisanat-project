@@ -21,12 +21,12 @@ if(mysql_numrows($reponse)==0){
 		if($result['activation']!=1)
 		{
 			$ok=TRUE;
-			$_SESSION['activation']='Votre compte est maintenant activé, vous pouvez désormais vous connecter à l\'aide de vos identifiants';
+			$_SESSION['activation']='Votre compte est maintenant activé, vous pouvez désormais vous connecter à l\'aide de vos identifiants en cliquant sur le lien suivant : <a href="index.php?page=connexion">Connexion</a>';
 			$_SESSION['error']='ok';
 			//On modifie le compte de l'utilisateur pour signaler que son compte est activé
 			$update = mysql_query("UPDATE utilisateur set activation='1', date_activation=CURRENT_TIMESTAMP WHERE code_activation='".$code_activation."'") or die(mysql_error());
 		}else{
-			$_SESSION['activation']='Votre compte est déjà activé, vous pouvez vous connecter à l\'aide de vos identifiants';
+			$_SESSION['activation']='Votre compte est déjà activé, vous pouvez vous connecter à l\'aide de vos identifiants en cliquant sur le lien suivant : <a href="index.php?page=connexion">Connexion</a>';
 			$_SESSION['error']='noir';
 		}
 	}

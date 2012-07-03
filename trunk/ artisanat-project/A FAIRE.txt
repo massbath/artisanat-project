@@ -1,9 +1,8 @@
 - Ajouter compléments d'adresse à l'enregistrement ...
-- Ajouter CAPTCHA à l'enregistrement
 - Mail à l'enregistrement
 
-- Création page connexion + erreur de log
-- page de mot de passe perdu
+RENAUD : Vérifier / FAIRE accessibilités des pages de modif, création d'entreprise et personnel
+	+ DESIGN DES FORMULAIRES
 
 
 Renaud : Intégration design
